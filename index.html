@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="jogo" id="jogoDiv">
+        <button onclick="fazerJogada(1)"><div class="bJogo" id="b1"></div></button>
+        <button onclick="fazerJogada(2)"><div class="bJogo" id="b2"></div></button>
+        <button onclick="fazerJogada(3)"><div class="bJogo" id="b3"></div></button>
+        <button onclick="fazerJogada(4)"><div class="bJogo" id="b4"></div></button>
+        <button onclick="fazerJogada(5)"><div class="bJogo" id="b5"></div></button>
+        <button onclick="fazerJogada(6)"><div class="bJogo" id="b6"></div></button>
+        <button onclick="fazerJogada(7)"><div class="bJogo" id="b7"></div></button>
+        <button onclick="fazerJogada(8)"><div class="bJogo" id="b8"></div></button>
+        <button onclick="fazerJogada(9)"><div class="bJogo" id="b9"></div></button>
+    </div>
+
+    <div class="placar">
+        <h1>Pontos Jogador X: <span id='pontuacao-jogadorX'>0</span></h1>
+        <h1>Pontos Jogador O: <span id="pontuacao-jogadorO">0</span></h1>
+        <h1>Empates: <span id="empates-span">0</span></h1>
+    </div>
+
+    <div class="botoes-jogo">
+        <button id="btn-reiniciar" onclick="reiniciarJogo()">Reiniciar</button>
+        <button id="btn-jogarDNV" onclick="limparDisplay()">Jogar Novamente</button>
+    </div>
+</body>
+
+</html>
